@@ -4,6 +4,8 @@ import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
 
+import javax.servlet.Servlet;
+
 public class HttpEcommerceService {
 
     public static void main(String[] args) throws Exception {
