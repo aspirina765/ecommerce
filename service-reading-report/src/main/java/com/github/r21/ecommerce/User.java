@@ -13,6 +13,6 @@ public class User {
   }
 
   public String getUuid() {
-    return this.uuid;
+    return uuid;
   }
 }

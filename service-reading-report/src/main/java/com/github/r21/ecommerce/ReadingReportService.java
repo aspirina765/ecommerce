@@ -1,13 +1,11 @@
 package com.github.r21.ecommerce;
 
-import com.github.r21.ecommerce.KafkaService;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.util.Map;
-import java.util.concurrent.ExecutionException;
 
 public class ReadingReportService {
 
@@ -24,7 +22,7 @@ public class ReadingReportService {
         }
     }
 
-    private void parse(ConsumerRecord<String, User> record) throws ExecutionException, InterruptedException, IOException {
+    private void parse(ConsumerRecord<String, User> record) throws IOException {
         System.out.println("------------------------------------------");
         System.out.println("Processing report for " + record.value());
 
