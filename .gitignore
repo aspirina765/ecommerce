@@ -39,3 +39,5 @@ build/
 .gitsecret/keys/random_seed
 !*.secret
 kafka-cli.sh
+confluent-client.properties
+conduktor-client.properties
