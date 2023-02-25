@@ -1,5 +1,6 @@
-package br.com.alura.ecommerce;
+package com.github.r21.ecommerce;
 
+import com.github.r21.ecommerce.KafkaService;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 
 import java.sql.Connection;
@@ -7,7 +8,6 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Map;
 import java.util.UUID;
-import java.util.concurrent.ExecutionException;
 
 public class CreateUserService {
 

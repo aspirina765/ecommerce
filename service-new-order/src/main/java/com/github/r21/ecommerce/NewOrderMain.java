@@ -1,4 +1,6 @@
-package br.com.alura.ecommerce;
+package com.github.r21.ecommerce;
+
+import com.github.r21.ecommerce.KafkaDispatcher;
 
 import java.math.BigDecimal;
 import java.util.UUID;
@@ -9,7 +11,7 @@ public class NewOrderMain {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         try (var orderDispatcher = new KafkaDispatcher<Order>()) {
             try (var emailDispatcher = new KafkaDispatcher<String>()) {
-                var email = Math.random() + "@email.com";
+                var email = Math.random() + "@email.github";
                 for (var i = 0; i < 10000; i++) {
 
                     var orderId = UUID.randomUUID().toString();

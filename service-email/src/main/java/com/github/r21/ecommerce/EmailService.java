@@ -1,5 +1,6 @@
-package br.com.alura.ecommerce;
+package com.github.r21.ecommerce;
 
+import com.github.r21.ecommerce.KafkaService;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 
 import java.util.Map;
